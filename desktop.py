@@ -124,11 +124,11 @@ Description : This is a utility function that takes in the
               Authorization Code as a parameter. The code
               is used to make a call to the access_token end
               point on the webex api to obtain a access token
-              and a refresh token that is then stored as in the
-              Session for use in other parts of the app.
-              NOTE: in production, auth tokens would not be stored
-              in a Session. This app will request a new token each time
-              it runs which will not be able to check against expired tokens.
+              and a refresh token that is then stored in the
+              Flask Session module for use in other parts of the app.
+              NOTE: IN PRODUCTION, AUTH TOKENS WOULD NOT BE STORED IN A SESSION. 
+              THIS APP WILL REQUEST A NEW TOKEN EACH TIME IT RUNS WHICH WILL NOT BE 
+              ABLE TO CHECK AGAINST EXPIRED TOKENS.
 """
 def get_tokens(code):
     print("function : get_tokens()")
